@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import styled from "styled-components";
 import { ReactComponent as PlayIcon } from "assets/icons/play.svg";
 import { ReactComponent as SkipIcon } from "assets/icons/skip.svg";
 import { ReactComponent as PauseIcon } from "assets/icons/pause.svg";
@@ -8,10 +8,10 @@ import { ReactComponent as ArrowLeftIcon } from "assets/icons/arrow.svg";
 import { ReactComponent as SearchIcon } from "assets/icons/search.svg";
 import { ReactComponent as HeartIcon } from "assets/icons/heart.svg";
 import { ReactComponent as UsersIcon } from "assets/icons/users.svg";
+import { ReactComponent as LogoIcon } from "assets/icons/logo.svg";
 
 const Play = styled(PlayIcon)`
   fill: ${(props) => props.color || "white"};
-  stroke: ${(props) => props.color || "white"};
 `;
 
 const SkipLeft = styled(SkipIcon)`
@@ -56,6 +56,10 @@ const Users = styled(UsersIcon)`
   stroke: ${(props) => props.color || "white"};
 `;
 
+const Logo = styled(LogoIcon)`
+  fill: ${(props) => props.color || "white"};
+`;
+
 export {
   Play,
   SkipLeft,
@@ -68,4 +72,5 @@ export {
   Search,
   Heart,
   Users,
+  Logo,
 };
